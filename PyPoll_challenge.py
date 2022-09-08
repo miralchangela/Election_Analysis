@@ -28,8 +28,8 @@ winning_count = 0
 winning_percentage = 0
 
 # 2: Track the largest county and county voter turnout.
-largest_country = ""
-largest_country_voter = 0
+largest_country_votes = 0
+largest_country_turnout= ""
 
 
 # Read the csv and convert it into a list of dictionaries
@@ -70,10 +70,8 @@ with open(file_to_load) as election_data:
             # 4b: Add the existing county to the list of counties.
             Country_names.append(Country_name)
 
-
             # 4c: Begin tracking the county's vote count.
             country_votes[Country_name] = 0
-
 
         # 5: Add a vote to that county's vote count.
         country_votes[Country_name] += 1
@@ -102,21 +100,26 @@ with open(file_to_save, "w") as txt_file:
         vote_percentage=(int(country_vote)/int(total_votes))*100
         # 6d: Print the county results to the terminal.
         country_results =(
-            f"{country}: {vote_percentage:.1f}% ({country_vote:,})\n")
-
+            f"{country}: {vote_percentage:.1f}% ({country_vote:,})\n")                                                                                                                            
         print(country_results)
-
         # 6e: Save the county votes to a text file.
         txt_file.write(country_results)
-
         # 6f: Write an if statement to determine the winning county and get its vote count.
+        if country_vote > largest_country_votes:
+            largest_country_votes = country_vote
+            largest_country_turnout= country
 
 
     # 7: Print the county with the largest turnout to the terminal.
-
-
+    largest_turnout =(
+    f"\n"
+    f"-----------------------\n"
+    f"Largest Country Turnour : {largest_country_turnout}\n"
+    f"-----------------------\n"
+    )
+    print(largest_turnout)
     # 8: Save the county with the largest turnout to a text file.
-
+    txt_file.write(largest_turnout)
 
     # Save the final candidate vote count to the text file.
     for candidate_name in candidate_votes:
