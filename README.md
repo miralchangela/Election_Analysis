@@ -1,6 +1,5 @@
-# Election_Analysis
-
-Click on the link to view the election analysis:[Election Analysis](https://github.com/miralchangela/Election_Analysis/blob/main/PyPoll_challenge.py)
+# Enlection_Analysis
+Click on the link to view the election analysis: [Election Analysis using python](https://github.com/miralchangela/Election_Analysis/blob/main/PyPoll_challenge.py)
 
 ## Overview of Election Audit
 
@@ -43,7 +42,7 @@ The data represented the ballot ID, county, and candidate name in csv file.
 
 *see the output of the code below:*
 
-[!election_results](https://github.com/miralchangela/Election_Analysis/blob/main/Resources/election_results_ss.png)
+![election_results](https://github.com/miralchangela/Election_Analysis/blob/main/Resources/election_results_ss.png)
 
 ## Election-Audit Summary
 
