@@ -1,4 +1,4 @@
-# Enlection_Analysis
+# Election_Analysis
 Click on the link to view the election analysis: [Election Analysis using python](https://github.com/miralchangela/Election_Analysis/blob/main/PyPoll_challenge.py)
 
 ## Overview of Election Audit
