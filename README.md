@@ -6,7 +6,7 @@ Click on the link to view the election analysis: [Election Analysis using python
 The Colorado Board of election needs support with the below tasks to complete the principal work for election audit.
 
 1) Calculate the total number of votes given.
-2) Find a list of countries that had aturnout.
+2) Find a list of countries that had a turnout.
 3) Calculate a votes for every country.
 4) Calculate the percentage of votes for every country.
 5) Find a list of candidates who participated in election.
